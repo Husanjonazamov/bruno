@@ -1,0 +1,34 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/cart/
+  body: json
+  auth: inherit
+}
+
+headers {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NDg1Mjk3ODEsInVzZXJfaWQiOjU3NjUxNDQ0MDV9.CRwvzP6DXACNG5mo5qElUeeYgnAObOLMglfPefhh0Xg
+}
+
+body:json {
+  
+  {
+    "cart_items": [
+      {
+        "book": 2,
+        "color": 2,
+        "size": 2
+      },
+      {
+        "book": 3,
+        "color": 3,
+        "size": 2     
+      }
+    ]
+  }
+  
+}
