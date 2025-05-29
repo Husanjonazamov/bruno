@@ -1,0 +1,15 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/user/create/
+  body: none
+  auth: inherit
+}
+
+headers {
+  token: token
+}

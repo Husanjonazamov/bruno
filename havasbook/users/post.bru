@@ -1,0 +1,23 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/user/create/
+  body: json
+  auth: inherit
+}
+
+headers {
+  token: token
+}
+
+body:json {
+  {
+    "first_name": "Husanjon",
+    "last_name": "Azamov",
+    "user_id": 324243243214
+  }
+}

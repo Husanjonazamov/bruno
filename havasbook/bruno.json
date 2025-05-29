@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "havasbook",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
