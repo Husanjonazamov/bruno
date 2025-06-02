@@ -5,7 +5,38 @@ meta {
 }
 
 post {
-  url: 
-  body: none
+  url: {{BASE_URL}}/preorder/
+  body: json
   auth: inherit
+}
+
+headers {
+  token: token
+}
+
+body:json {
+  /order/
+  
+  {
+    "location": {
+      "lat": "41.3111",
+      "long": "69.2797",
+      "title": "Toshkent"
+    },
+    "delivery_method": 1,
+    "reciever": {
+      "phone": "+998901234567",
+      "name": "Husanboy"
+    },
+    "payment_method": "payme",
+    "order_type": "preorder",
+    "comment": "Iltimos tezroq yetkazib bering",
+    "order_item": [
+      {
+        "book": 1,
+        "quantity": 2
+      }
+    ]
+  }
+  
 }

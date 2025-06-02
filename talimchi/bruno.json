@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "talimchi",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
