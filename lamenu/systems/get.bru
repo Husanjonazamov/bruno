@@ -1,0 +1,18 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/order
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "phone": 998940014741,
+    "password": 2309
+  }
+}

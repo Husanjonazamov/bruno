@@ -1,0 +1,28 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/generate/
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+    "owner": "Husanjon",
+    "client": "Azamov",
+    "purpose": "ere",
+    "valuation_amount": 19000
+  }
+}
+
+body:multipart-form {
+  input_pdf: @file(/home/niko/Downloads/AyuGram Desktop/Tijorat takilif uzhududgaz.pdf)
+  owner: Husanjon
+  client: Azamov
+  purpose: SHuanchaki
+  valuation_amount: 1900000
+}

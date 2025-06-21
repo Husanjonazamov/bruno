@@ -1,0 +1,18 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/brand/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Brand3",
+    "gender": 2
+  }
+}

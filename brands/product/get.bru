@@ -1,0 +1,17 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/product/brands/?gender=female&brand=24
+  body: none
+  auth: inherit
+}
+
+params:query {
+  gender: female
+  brand: 24
+  ~page: 1
+}

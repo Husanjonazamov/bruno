@@ -1,0 +1,20 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/contact/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Husanjon",
+    "email": "azamovhusanboy08@gmail.com",
+    "phone": 998940014741,
+    "description": "salom"
+  }
+}

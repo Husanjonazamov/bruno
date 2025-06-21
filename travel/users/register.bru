@@ -1,0 +1,20 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+get {
+  url: https://bot.felixits.uz/branch/branch-id/3
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "first_name": "Husanjon",
+    "last_name": "Azamov",
+    "phone": 998940034541,
+    "password": 940014741
+  }
+}
