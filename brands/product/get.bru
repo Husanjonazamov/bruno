@@ -5,13 +5,23 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/product/brands/?gender=female&brand=24
+  url: {{BASE_URL}}/product/category/?gender=female&category=6
   body: none
   auth: inherit
 }
 
 params:query {
   gender: female
-  brand: 24
-  ~page: 1
+  category: 6
+  ~currency: UZS
+  ~subcategory: 3
+  ~currency: USD
+  ~brand: 1
+  ~min_price: 10
+  ~max_price: 11
+}
+
+headers {
+  currency: uzs
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA5NTU4MDksInVzZXJfaWQiOjU3NjUxNDQ0MDV9.JDuReg0c_c3hPoXH-UTxRiVlT6vfTEOpdixWVtqfziY
 }

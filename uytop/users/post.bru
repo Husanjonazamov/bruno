@@ -1,0 +1,25 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://uytop.felixits.uz/auth/register/
+  body: json
+  auth: inherit
+}
+
+headers {
+  ~initdata: user=%7B%22id%22%3A4%2C%22name%22%3A%22HUsanjon%22%7D&auth_date=1719834843
+  ~token: 6b160bd55cb01967fe757cc35f02d2850c0db22e71d74681a6f4412b02a47690
+}
+
+body:json {
+  {
+    "tg_id": 5765144405,
+    "first_name": "5765144405",
+    "last_name": "54",
+    "photo_url": "http://example.com/photo.jp"
+  }
+}

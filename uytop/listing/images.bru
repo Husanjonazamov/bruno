@@ -1,0 +1,15 @@
+meta {
+  name: images
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/listing-image/
+  body: multipartForm
+  auth: inherit
+}
+
+body:multipart-form {
+  image: @file(/home/niko/Pictures/b.png)
+}

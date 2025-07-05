@@ -1,0 +1,18 @@
+meta {
+  name: test
+  type: http
+  seq: 9
+}
+
+post {
+  url: https://jsonplaceholder.typicode.com/users/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Husanjon",
+    "email": "azamovhusanboy08@gmail.com"
+  }
+}

@@ -1,0 +1,16 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/order/
+  body: none
+  auth: inherit
+}
+
+headers {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA3ODE3NDQsInVzZXJfaWQiOjU3NjUxNDQ0MDV9.O_T4kfimWD8uxVcKKo6nMsJg63_W8J3ZyX70gwuYYMM
+  currency: EUR
+}

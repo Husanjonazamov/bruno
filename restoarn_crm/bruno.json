@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "restoarn_crm",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

@@ -1,0 +1,19 @@
+meta {
+  name: search
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BASE_URL}}/listing/search/?search=
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: 
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNDQzNzIxLCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6IjNhZDY1YjkzYmQ5NjRjNjc5NDIzOTM1MDE4MjYyMTI5IiwidXNlcl9pZCI6Mn0.L5ve3fHXu98k2aHw2w3MX8gSQrvtWBjBhYC28QcvwDw
+}

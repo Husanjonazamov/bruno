@@ -1,0 +1,18 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/auth/register/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "phone": 998940015465,
+    "password": 9090
+  }
+}

@@ -1,0 +1,19 @@
+meta {
+  name: me
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URL}}/listing/me/?status=pending
+  body: none
+  auth: inherit
+}
+
+params:query {
+  status: pending
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNjMwOTQxLCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6ImJkYWI0NTEwOWFlODQ5YzRiNzNjNTkxZTlmM2UzNzlhIiwidXNlcl9pZCI6Mn0.nIT8OLY2ITvGGg6c90nDXyMbAOU6VG3kWSwC6Z5XUbU
+}

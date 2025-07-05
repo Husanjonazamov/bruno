@@ -1,0 +1,34 @@
+meta {
+  name: products
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/products/?search=titla3
+  body: json
+  auth: inherit
+}
+
+params:query {
+  search: titla3
+  ~category: 2
+  ~page: 12
+}
+
+body:json {
+  {
+    "title": "Garlic in Brine",
+    "slug": "garl3ic-in-brine",
+    "subtitle": "Fresh garlic in brine",
+    "category": 23,
+    "description": "Full description here",
+    "content": "Rich content here...",
+    "image": null,
+    "link": "https://zt-foods.com/garlic-in-brine",
+    "popular": false,
+    "is_new": true,
+    "rate": 4.5
+  }
+  
+}

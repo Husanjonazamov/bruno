@@ -1,0 +1,21 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/favorites/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxMzc0OTY5LCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6ImVmYjExMzFkNjllOTQyNmFhZTA2MjhlMmFlNjYxOTBmIiwidXNlcl9pZCI6Mn0.T3iIpcA2X1J1ucIElpAVfoJEtRCY5ISZPmttIPE0E58
+}
+
+body:json {
+  {
+    "listing": 43
+  }
+}

@@ -1,0 +1,16 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/favorites/
+  body: none
+  auth: inherit
+}
+
+headers {
+  initdata: user=%7B%22id%22%3A432545435435%2C%22name%22%3A%22Ali%22%7D&auth_date=1719834843
+  token: 5ab2c0e18f84ecf4a2fc9618a4ca6097a37af44fbf3824f002dec1a179d8c30f
+}

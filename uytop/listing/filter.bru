@@ -1,0 +1,22 @@
+meta {
+  name: filter
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{BASE_URL}}/listing/?is_top=false
+  body: none
+  auth: inherit
+}
+
+params:query {
+  is_top: false
+  ~property: 1
+  ~dealtype: rent
+  ~price_start: 1000
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNDYyMDQ2LCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6ImQzNzdjZDMzOTY0NDQxNzliN2E1MDcyZmRmZGI3YWM2IiwidXNlcl9pZCI6Mn0.-f-N-ephYHjO5tXDbE3lG4aTVNYrkwQpC-iR1EWEzeo
+}
