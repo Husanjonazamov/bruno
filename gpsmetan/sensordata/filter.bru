@@ -1,0 +1,16 @@
+meta {
+  name: filter
+  type: http
+  seq: 4
+}
+
+get {
+  url: https://gpsmetan.felixits.uz/api/sensor-data/by-device/234/?daily=2025-07-14
+  body: none
+  auth: inherit
+}
+
+params:query {
+  daily: 2025-07-14
+  ~daily: 2025-07-14
+}

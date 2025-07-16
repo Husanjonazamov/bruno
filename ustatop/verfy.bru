@@ -1,0 +1,18 @@
+meta {
+  name: verfy
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://62.113.200.253:8000/api/v1/auth/verify-otp
+  body: json
+  auth: inherit
+}
+
+body:json {
+  { 
+    "email": "azamovhusanboy08@gmail.com",
+    "otp": "892701" 
+  }
+}

@@ -1,0 +1,25 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/vehicle/
+  body: multipartForm
+  auth: inherit
+}
+
+body:form-urlencoded {
+  name: 
+}
+
+body:multipart-form {
+  name: koblt
+  color: qizil
+  year: 2020
+  number: 23
+  category: yengil
+  image: @file(/home/niko/Pictures/black-370118_960_720.png)
+  ~device: 3
+}

@@ -5,18 +5,20 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/listing/?is_top=false
+  url: {{BASE_URL}}/listing/
   body: none
   auth: inherit
 }
 
 params:query {
-  is_top: false
+  ~property_subtype: mays
+  ~property: 1
+  ~is_top: false
   ~property: 1
   ~dealtype: rent
   ~price_start: 1000
 }
 
 headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxNDYyMDQ2LCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6ImQzNzdjZDMzOTY0NDQxNzliN2E1MDcyZmRmZGI3YWM2IiwidXNlcl9pZCI6Mn0.-f-N-ephYHjO5tXDbE3lG4aTVNYrkwQpC-iR1EWEzeo
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUyMTI5MjMxLCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6IjI5ZmJhODVhODg0MzRiOGNiZjVhYjM5ZDkyOThmMDg2IiwidXNlcl9pZCI6Mn0.Eo2U04wZmXIdUU5RRE7MMtCdxq8mWt9aG8TNKlRmRdQ
 }

@@ -1,11 +1,11 @@
 meta {
-  name: auth-token
+  name: post
   type: http
   seq: 2
 }
 
 post {
-  url: {{BASE_URL}}/auth/token/
+  url: https://sinolifebot.aniverse.uz/api/order/
   body: json
   auth: inherit
 }
@@ -13,6 +13,6 @@ post {
 body:json {
   {
     "tg_id": 5765144405,
-    "first_name": "5765144405"
+    "payment_type": "payme"
   }
 }

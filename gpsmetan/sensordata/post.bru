@@ -1,0 +1,23 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/sensor-data/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "deviceId": 145,
+    "flow": 2.31,
+    "pressure": 1.45,
+    "lat": 41.3123,
+    "lon": 69.2791,
+    "time": "2024-07-08T14:30:12Z",
+    "temperature": 22.5
+  }
+}

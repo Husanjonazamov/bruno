@@ -1,0 +1,42 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://brands.felixits.uz/order/
+  body: json
+  auth: inherit
+}
+
+headers {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTE5MDUwOTMsInVzZXJfaWQiOjU3NjUxNDQ0MDV9.7GbLcdXRGDHaFw-US9qkwrLrmoQHsEu_xK5e7ZsP8-8
+}
+
+body:json {
+  
+  {
+    "location": {
+      "lat": "41.3111",
+      "long": "69.2797",
+      "title": "Toshkent"
+    },
+    "delivery_method": 1,
+    "reciever": {
+      "phone": "+998901234567",
+      "name": "Husanboy"
+    },
+    "payment_method": "payme",
+    "order_type": "preorder",
+    "comment": "Iltimos tezroq yetkazib bering",
+    "order_item": [
+      {
+        "book": 10
+        ,
+        "quantity": 2
+      }
+    ]
+  }
+  
+}

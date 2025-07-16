@@ -1,0 +1,11 @@
+meta {
+  name: get_deactive
+  type: http
+  seq: 6
+}
+
+get {
+  url: {{BASE_URL}}/device-activate/inactive/
+  body: none
+  auth: inherit
+}

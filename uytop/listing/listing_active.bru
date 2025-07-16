@@ -1,0 +1,22 @@
+meta {
+  name: listing_active
+  type: http
+  seq: 9
+}
+
+post {
+  url: {{BASE_URL}}/active/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUxOTgyMjI2LCJpYXQiOjE3NTEzNjU4MzAsImp0aSI6IjdiMzA0MDQzYzBkOTQyMzM5ZjIxM2JlNzBjNTZiZmVkIiwidXNlcl9pZCI6Mn0.M77PRziTTVCViwqrSIGlqf1LlT12N7yGMdQWVPcMHfY
+}
+
+body:json {
+  {
+    "listing": 124,
+    "toplisting": 1
+  }
+}

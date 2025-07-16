@@ -1,0 +1,15 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/api/cart/?tg_id=5765144405
+  body: none
+  auth: inherit
+}
+
+params:query {
+  tg_id: 5765144405
+}

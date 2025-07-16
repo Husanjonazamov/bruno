@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "livershop",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

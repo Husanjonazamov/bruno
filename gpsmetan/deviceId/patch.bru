@@ -1,0 +1,17 @@
+meta {
+  name: patch
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{BASE_URL}}/device/4/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "deviceId": 17
+  }
+}

@@ -1,0 +1,17 @@
+meta {
+  name: patch
+  type: http
+  seq: 5
+}
+
+patch {
+  url: {{BASE_URL}}/vehicle/7/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "device": 5
+  }
+}
