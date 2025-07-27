@@ -1,0 +1,20 @@
+meta {
+  name: filter
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/product/
+  body: none
+  auth: inherit
+}
+
+params:query {
+  ~is_discounted: false
+  ~is_new: true
+  ~is_populer: true
+  ~min_price: 200
+  ~max_price: 4322000
+  ~category_ids: 2,3,
+}

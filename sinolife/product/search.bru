@@ -1,0 +1,15 @@
+meta {
+  name: search
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/product/?q=felix
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: felix
+}

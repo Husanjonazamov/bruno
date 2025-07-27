@@ -1,0 +1,19 @@
+meta {
+  name: me
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URL}}/order/me/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMjY5NzQ4LCJpYXQiOjE3NTMyNTc0MjgsImp0aSI6ImI3OTU2YjRjZDkxNTQ3MjM5ZGJlYzFlYzNhYTE4OTdjIiwidXNlcl9pZCI6MTN9.ziLiydO39tEXm2P92o10PjVNHMNY6-jdOQNo3MXQ6xM
+}
+
+settings {
+  encodeUrl: true
+}

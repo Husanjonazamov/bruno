@@ -4,14 +4,19 @@ meta {
   seq: 5
 }
 
-patch {
-  url: {{BASE_URL}}/vehicle/7/
+get {
+  url: https://api.shox.uz/api/v1/get-combined-data/
   body: json
   auth: inherit
 }
 
+headers {
+  moduleId: 1
+  zoneId: 2
+}
+
 body:json {
   {
-    "device": 5
+    "list_type": "item"
   }
 }

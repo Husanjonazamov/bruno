@@ -1,0 +1,17 @@
+meta {
+  name: refresh
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BASE}}/auth/token/refresh/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc1NTg0OTQyOCwiaWF0IjoxNzUzMjU3NDI4LCJqdGkiOiJhZjYwNDUzZDU0MmE0MGJiODUxY2FkMGExMTM2MWQ3MSIsInVzZXJfaWQiOjEzfQ.mAhsBzw__tCTwa5Hr250PDn_Ke41dhr30LHsygd9cKM"
+  }
+}

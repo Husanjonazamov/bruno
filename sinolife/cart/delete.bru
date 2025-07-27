@@ -1,0 +1,15 @@
+meta {
+  name: delete
+  type: http
+  seq: 3
+}
+
+delete {
+  url: {{BASE_URL}}/cart-item/5/remove/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMTY4NzE4LCJpYXQiOjE3NTI3NTU1MTIsImp0aSI6ImJlYjE2NDZmOTI2NjQwMTQ5Nzc3MjY2NTYyYmIyZjFhIiwidXNlcl9pZCI6MX0.Ertz9MTfwtoLhI7OiStm9kzb4k38blrxNaFidePcctw
+}
