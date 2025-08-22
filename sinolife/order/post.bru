@@ -11,26 +11,27 @@ post {
 }
 
 headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzUzMjUxOTIzLCJpYXQiOjE3NTMyNDgzMjMsImp0aSI6ImE4MjVmYWJmNTc3MTRmNWM5YzBlNTI2M2U0NTE3M2E5IiwidXNlcl9pZCI6MTN9.cLZT3OUOwztSor0OvLyLvfq_6T_YgSdrnsPGw6qEu-E
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU1Njk1MDA0LCJpYXQiOjE3NTU2OTE0MDQsImp0aSI6ImI0ZGY4ZDk5ZjBhODQ3YWFiM2M4MDA0ZmNhMjJlODA1IiwidXNlcl9pZCI6NH0.vOZOMOkdxKxkHmgjGssRZmeNSx2bBiawsfgzoT8EjK4
 }
 
 body:json {
   {
     "first_name": "Ali",
     "phone": "+998901234567",
-    "payment_type": "click",
-    "lat": 41.2995,
-    "lon": 69.2401,
+    "payment_type": "cash",
+    "region": "dsa",
+    "district": "district",
     "order_item": [
       {
-        "product": 2,
+        "product": 1,
         "quantity": 2
       },
       {
         "product": 1,
         "quantity": 1
       }
-    ]
+    ],
+    "address": "ds"
   }
   
 }

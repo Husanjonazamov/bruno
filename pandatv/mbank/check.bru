@@ -1,0 +1,23 @@
+meta {
+  name: check
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://ibank2.cbk.kg/otp/v2/check?phone=996700322336
+  body: none
+  auth: inherit
+}
+
+params:query {
+  phone: 996700322336
+}
+
+headers {
+  authenticate: bcec992fec1e20efcc7458839dafca53b5cb855b288562233b7ad1c7bb62b835
+}
+
+settings {
+  encodeUrl: true
+}

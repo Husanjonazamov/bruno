@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "pedagog",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

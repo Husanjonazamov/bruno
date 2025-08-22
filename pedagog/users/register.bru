@@ -1,0 +1,32 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/auth/register/
+  body: json
+  auth: inherit
+}
+
+headers {
+  source: click_app
+}
+
+body:json {
+  {
+    "phone": 998940017746,
+    "first_name": "husanjon",
+    "last_name": "Azamov",
+    "father_name": "Otabek o'g'li",
+    "password": "940014741",
+    "region": 1,
+    "district": 1,
+    "institution_number": "22"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

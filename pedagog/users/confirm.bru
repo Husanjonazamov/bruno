@@ -1,0 +1,22 @@
+meta {
+  name: confirm
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/auth/confirm/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "code": 3483,
+    "phone": 998940017746
+  }
+}
+
+settings {
+  encodeUrl: true
+}

@@ -1,0 +1,23 @@
+meta {
+  name: test
+  type: http
+  seq: 5
+}
+
+get {
+  url: https://ibank2.cbk.kg/otp/v2/recurrent/status?recurrentId=0198a7e7-487c-7986-a5e7-e7be6f48c181
+  body: none
+  auth: inherit
+}
+
+params:query {
+  recurrentId: 0198a7e7-487c-7986-a5e7-e7be6f48c181
+}
+
+headers {
+  authenticate: bcec992fec1e20efcc7458839dafca53b5cb855b288562233b7ad1c7bb62b835
+}
+
+settings {
+  encodeUrl: true
+}

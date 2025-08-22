@@ -1,0 +1,19 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/product/category/?category=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  category: 1
+}
+
+settings {
+  encodeUrl: true
+}

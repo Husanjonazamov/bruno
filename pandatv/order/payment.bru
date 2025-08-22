@@ -1,0 +1,25 @@
+meta {
+  name: payment
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/v2/order/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU1MjU5NTQ1LCJpYXQiOjE3NTUxNzMxNDUsImp0aSI6IjE4ZmRiNDVkMTM4YzRhNmZiYTRmYTM4OWQxODc5NjczIiwidXNlcl9pZCI6MiwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.1pTLcyKpTu1I3PDZW4K3cQ6uwhCDC7dxAWmJcdSJFfo
+}
+
+body:json {
+  {
+    
+  }
+}
+
+settings {
+  encodeUrl: true
+}

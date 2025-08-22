@@ -1,0 +1,30 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/orders/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU1ODUwNDg5LCJpYXQiOjE3NTU3NjQwODksImp0aSI6IjIzNTY3NzkwNzNmNDRhMjZhOTlkZWIyNTc5Mzk2Mjg0IiwidXNlcl9pZCI6N30.ZGTQLUELRV4EtDknlDOcOLNueLo0E4pnLBnLHfu1D30
+  source: mobile
+}
+
+body:json {
+  {
+    "science": 1,
+    "science_language": 1,
+    "classes": 1,
+    "quarter": 1
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+}

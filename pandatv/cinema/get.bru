@@ -1,0 +1,29 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://yangiyul.felixits.uz/product/?subcategory=&category=&min_price&max_price=&brand=
+  body: none
+  auth: inherit
+}
+
+params:query {
+  subcategory: 
+  category: 
+  min_price: 
+  max_price: 
+  brand: 
+  ~cinema_id: 2
+  ~access: cinema_id=2
+}
+
+headers {
+  ~token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo1NzY1MTQ0NDA1LCJ0ZWxlZ3JhbURhdGEiOnsiaWQiOjU3NjUxNDQ0MDUsImZpcnN0X25hbWUiOiJIdXNhbmpvbiIsImxhc3RfbmFtZSI6IiIsInVzZXJuYW1lIjoiSHVzYW5ib3lfQXphbW92In0sImlhdCI6MTc1NDk5ODQzMywiZXhwIjoxNzU1MDAyMDMzfQ.s8XmFp7BxzHP-l603lCAsG6XKL5F8_Xbi32muZi5-fw
+}
+
+settings {
+  encodeUrl: true
+}

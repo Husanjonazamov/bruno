@@ -1,0 +1,26 @@
+meta {
+  name: confirm
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://ibank2.cbk.kg/otp/v2/confirm
+  body: json
+  auth: inherit
+}
+
+headers {
+  authenticate: bcec992fec1e20efcc7458839dafca53b5cb855b288562233b7ad1c7bb62b835
+}
+
+body:json {
+  {
+     "quid": "PANDATV_REQ_66",
+      "otp": "0000"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

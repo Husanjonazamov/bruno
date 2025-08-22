@@ -1,0 +1,22 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api.pedagog.uz/api/v2/payment/create/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "order": 56,
+    "payment_type": "payme"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

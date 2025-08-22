@@ -1,0 +1,19 @@
+meta {
+  name: plan
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/plan/
+  body: json
+  auth: inherit
+}
+
+headers {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTU3ODQ0MDAsInRnX2lkIjo1NzY1MTQ0NDA1fQ.i2XF3su4ZO_LCwOro-oLpOUWwUyuDme-eCpnLl3qB5k
+}
+
+settings {
+  encodeUrl: true
+}
