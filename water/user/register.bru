@@ -1,19 +1,20 @@
 meta {
-  name: token
+  name: register
   type: http
-  seq: 2
+  seq: 1
 }
 
 post {
-  url: https://api.pandatv.uz/api/v2/auth/token/
+  url: {{BASE_URL}}/api/users/
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "phone": 998888112309,
-    "password": 2309
+    "tg_id": 3421432423,
+    "name": "si",
+    "role": "courier"
   }
 }
 

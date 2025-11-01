@@ -1,0 +1,20 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/v1/favorite/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYxNjYwMzMzLCJpYXQiOjE3NjE2NTY3MzMsImp0aSI6IjNlN2FjNGMzNDk2NjQ1ZmVhMmMxMWI3YWY5ZjZkZTI2IiwidXNlcl9pZCI6MX0.-E4aU83LKC8tEt6w-VZeugcB44p90l4c5UnwmJBc70U
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

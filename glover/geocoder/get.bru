@@ -1,0 +1,27 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/geocoder/forward?lat=7.75455296041375&lng=6.415991149842739&limit=5
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lat: 7.75455296041375
+  lng: 6.415991149842739
+  limit: 5
+}
+
+headers {
+  Authorization: Bearer 2|uhaiZ0qbsmcGqWyRTUO6cr2pbq8dqAtzr2Vh3X6Va5e0584b
+  Accept: application/json
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

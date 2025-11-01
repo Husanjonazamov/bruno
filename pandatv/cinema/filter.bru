@@ -1,0 +1,27 @@
+meta {
+  name: filter
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/cinema/?genre=3,1,2
+  body: none
+  auth: inherit
+}
+
+params:query {
+  genre: 3,1,2
+  ~year_to: 2020
+  ~year_from: 2025
+  ~search: nima gap
+}
+
+headers {
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYyMDY1MjcxLCJpYXQiOjE3NjE5Nzg4NzEsImp0aSI6IjI3OTEzZjM1YjIxMDQyZTliNmEyZmUzMDIxNTU1ZGYxIiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OTg4ODgxMTIzMDkifQ.lrLyxOOrHvq6UpgXpkzGiB5_M9uHJANmNOgRyKlN6Pw
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

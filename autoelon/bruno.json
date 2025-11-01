@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "autoelon",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

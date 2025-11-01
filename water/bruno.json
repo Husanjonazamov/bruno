@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "water",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

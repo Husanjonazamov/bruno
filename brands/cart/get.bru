@@ -4,13 +4,25 @@ meta {
   seq: 1
 }
 
-get {
+post {
   url: {{BASE_URL}}/cart/
-  body: none
+  body: json
   auth: inherit
 }
 
 headers {
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA3ODE3NDQsInVzZXJfaWQiOjU3NjUxNDQ0MDV9.O_T4kfimWD8uxVcKKo6nMsJg63_W8J3ZyX70gwuYYMM
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NjEwNDkzNzUsInVzZXJfaWQiOjU3NjUxNDQ0MDV9.oe7AWQTTX_nv9BpbXkvwYV6v1gQlaBDu9dGPm-K9OSk
   currency: UZS
+}
+
+body:json {
+  {
+    "cart_items": [
+      {
+        "book": 1,
+        "quantity": 1
+      }
+    ]
+  }
+  
 }

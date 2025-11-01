@@ -1,0 +1,24 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/cinema/comment/?cinema_id=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  cinema_id: 1
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYyMDYxOTQxLCJpYXQiOjE3NjE5NzU1NDEsImp0aSI6IjQ2ZTNjMWUwYzhjYzQ0NjM5YzU1NGJmMzA1OTFmZTA0IiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OTg4ODgxMTIzMDkifQ.MlG1mjHiJbH_SsZLd-KYGPJ9gNeAEcHTL0Zg3n7C7d4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

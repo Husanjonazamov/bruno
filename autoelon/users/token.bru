@@ -1,19 +1,19 @@
 meta {
   name: token
   type: http
-  seq: 2
+  seq: 1
 }
 
 post {
-  url: https://api.pandatv.uz/api/v2/auth/token/
+  url: {{BASE_URL}}/auth/token/
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "phone": 998888112309,
-    "password": 2309
+    "phone": 99,
+    "password": 99
   }
 }
 

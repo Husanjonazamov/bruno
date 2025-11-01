@@ -5,13 +5,13 @@ meta {
 }
 
 post {
-  url: {{BASE_URL}}
+  url: {{BASE_URL}}/checkout-complete/
   body: none
   auth: inherit
 }
 
 headers {
-  Accept-Ranges: 
+  X-CSRF-TOKEN: 
 }
 
 settings {

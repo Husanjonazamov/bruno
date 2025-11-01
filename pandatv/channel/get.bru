@@ -1,0 +1,20 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/channel/2
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYxNDYyODY0LCJpYXQiOjE3NjEzNzY0NjQsImp0aSI6IjgwODZmODlkYzcwMTRmY2M4OTU1OTU3OGI2NWY5ZjVlIiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.cfUjpS1NxmcW1g6FRn_Vo_VEhOcIKfULItj4hkmlgew
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

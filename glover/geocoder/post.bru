@@ -1,0 +1,22 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/geocoder/forward?lat=7.75455296041375&lng=6.415991149842739&limit=5
+  body: none
+  auth: inherit
+}
+
+params:query {
+  lat: 7.75455296041375
+  lng: 6.415991149842739
+  limit: 5
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

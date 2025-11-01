@@ -5,17 +5,14 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/product/category/?gender=female&category=6
+  url: https://admin.amnesiam.com/product
   body: none
   auth: inherit
 }
 
 params:query {
-  gender: female
-  category: 6
-  ~currency: UZS
+  ~currency: uzs
   ~subcategory: 3
-  ~currency: USD
   ~brand: 1
   ~min_price: 10
   ~max_price: 11
@@ -23,5 +20,5 @@ params:query {
 
 headers {
   currency: uzs
-  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NTA5NTU4MDksInVzZXJfaWQiOjU3NjUxNDQ0MDV9.JDuReg0c_c3hPoXH-UTxRiVlT6vfTEOpdixWVtqfziY
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3NjEwNDkzNzUsInVzZXJfaWQiOjU3NjUxNDQ0MDV9.oe7AWQTTX_nv9BpbXkvwYV6v1gQlaBDu9dGPm-K9OSk
 }

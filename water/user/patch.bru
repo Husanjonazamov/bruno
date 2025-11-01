@@ -1,19 +1,19 @@
 meta {
-  name: token
+  name: patch
   type: http
   seq: 2
 }
 
-post {
-  url: https://api.pandatv.uz/api/v2/auth/token/
+patch {
+  url: {{BASE_URL}}/api/users/update-role/
   body: json
   auth: inherit
 }
 
 body:json {
   {
-    "phone": 998888112309,
-    "password": 2309
+    "tg_id": 3421432423,
+    "role": "courier"
   }
 }
 

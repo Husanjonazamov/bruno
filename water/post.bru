@@ -1,0 +1,26 @@
+meta {
+  name: post
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/order/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": ":Sa",
+    "phone": 432424423423,
+    "long": 332.112,
+    "lat": 321.232,
+    "data": "sata"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,27 @@
+meta {
+  name: get
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/api/v1/listing/?is_installment=true
+  body: none
+  auth: inherit
+}
+
+params:query {
+  is_installment: true
+  ~is_guaranteed: true
+  ~is_installment: true
+  ~is_daily_offer: 
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYxNzM3MjA2LCJpYXQiOjE3NjE3MzM2MDYsImp0aSI6ImE3Y2Y5OTY5NWMwZTQ1ZjNiMzMwNzcwMDg3MWVhMTM1IiwidXNlcl9pZCI6MX0.O51Pl5EqT3yETo7Ma4uNKqFTkQO9zdJOfwFEDtrQ-ow
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
