@@ -1,0 +1,20 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/plan/1/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0MDcyMjAzLCJpYXQiOjE3NjM5ODU4MDMsImp0aSI6IjlkYzYyNGZkYzcxODQ3YzlhZjQwYTFiODIwM2UwYzczIiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OSJ9.4eW0ySRgEhDN-_eEdQahn0_1GpYAAS0REKPJ2wJy9Ww
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

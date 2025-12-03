@@ -1,0 +1,23 @@
+meta {
+  name: lang
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{BASE_URL}}/api/users/update-lang/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "tg_id": 3421432423,
+    "lang": "ru"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

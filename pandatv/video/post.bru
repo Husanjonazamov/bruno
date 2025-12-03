@@ -1,0 +1,26 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/v2/cinema/upload/
+  body: multipartForm
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NzIwMDA5LCJpYXQiOjE3NjQ2MzM2MDksImp0aSI6IjBlNWQwODkzNzk3NzQ5ZGY5ODQyMGQyMDBlNmMwNjYzIiwidXNlcl9pZCI6MTB9.EJ84tuNGbDvYHopwDY3B429XK4cAlcNSxb4nKsWU5PI
+}
+
+body:multipart-form {
+  videos: @file(/home/niko/Videos/@qogozbinotv.mp4)
+  resolutions: 5
+  resolutions: 4
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

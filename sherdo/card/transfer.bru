@@ -1,0 +1,25 @@
+meta {
+  name: transfer
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/cardtransfer/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "from_card": "5680452499138519",
+    "to_card": "4324324343242344",
+    "amount": 50
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

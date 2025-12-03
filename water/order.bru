@@ -4,7 +4,7 @@ meta {
   seq: 1
 }
 
-get {
+post {
   url: {{BASE_URL}}/api/order/
   body: json
   auth: inherit
@@ -12,9 +12,19 @@ get {
 
 body:json {
   {
-    "name": "sdd",
-    ""
+    "name": "Husanjon",
+    "phone": 23432432432,
+    "long": 321.321,
+    "lat": 42.1423,
+    "delivery_date": "2025-11-28",
+    "order_item": [
+      {
+        "product": 1,
+        "quantity": 2
+      }
+    ]
   }
+  
 }
 
 settings {

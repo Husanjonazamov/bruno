@@ -5,15 +5,21 @@ meta {
 }
 
 post {
-  url: https://api.pandatv.uz/api/v2/auth/token/
+  url: {{BASE_URL}}/api/v2/auth/token/
   body: json
   auth: inherit
 }
 
+headers {
+  Accept-Language: ru
+  ip: 94.230.232.47
+  device: sumsung pro max
+}
+
 body:json {
   {
-    "phone": 998888112309,
-    "password": 2309
+    "phone": 99,
+    "password": 940014741
   }
 }
 

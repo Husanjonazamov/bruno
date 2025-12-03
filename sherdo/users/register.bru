@@ -1,0 +1,25 @@
+meta {
+  name: register
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/auth/register/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "first_name": "Husanjon",
+    "last_name": "qarg'alar",
+    "phone": 998940014211,
+    "password": 940014741
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

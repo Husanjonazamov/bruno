@@ -1,0 +1,20 @@
+meta {
+  name: search
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/products?search=tuxum
+  body: none
+  auth: inherit
+}
+
+params:query {
+  search: tuxum
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

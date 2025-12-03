@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "fondex",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

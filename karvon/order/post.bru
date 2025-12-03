@@ -5,13 +5,27 @@ meta {
 }
 
 post {
-  url: {{BASE_URL}}/checkout-complete/
-  body: none
+  url: {{BASE_URL}}/api/order/store
+  body: json
   auth: inherit
 }
 
 headers {
-  X-CSRF-TOKEN: 
+  Authorization: Bearer 3679|FTvK35hmvMUiQBkWiwLgYUIL6hBquKVifZeAPAFB
+}
+
+body:json {
+  {
+    "shipping_address_id": 12,
+    "billing_address_id": 12,
+    "phone": "+998901234567",
+    "alternative_phone": "+998901234568",
+    "shipping_delivery_type": "standard",
+    "chosen_logistic_zone_id": 2,
+    "tips": 500,
+    "payment_method": "cod"
+  }
+  
 }
 
 settings {

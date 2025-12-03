@@ -5,16 +5,17 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/api/v2/cinema/?genre=3,1,2
+  url: {{BASE_URL}}/api/v2/cinema/?genre=1&category=4
   body: none
   auth: inherit
 }
 
 params:query {
-  genre: 3,1,2
-  ~year_to: 2020
-  ~year_from: 2025
+  genre: 1
+  category: 4
+  ~year_to: 2027
   ~search: nima gap
+  ~year_from: 2026
 }
 
 headers {

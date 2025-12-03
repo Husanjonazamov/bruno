@@ -1,0 +1,28 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/carts/add/
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer 3679|FTvK35hmvMUiQBkWiwLgYUIL6hBquKVifZeAPAFB
+}
+
+body:json {
+  {
+    "product_variation_id": 1,
+    "quantity": 0
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

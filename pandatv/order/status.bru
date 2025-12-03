@@ -1,0 +1,20 @@
+meta {
+  name: status
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/order/1/payment-status/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNjQ4MzUxLCJpYXQiOjE3NjM1NjE5NTEsImp0aSI6ImFmNTg0OTg4ZDA3YTRlMTZhMzI0NWEwYTcwM2M1NGQ2IiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OSJ9.93AXih0bfRKvfFVXLQa3TPQybqKFxm2w_gT_TrFTIls
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

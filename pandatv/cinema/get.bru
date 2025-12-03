@@ -5,19 +5,20 @@ meta {
 }
 
 get {
-  url: https://api.pandatv.uz/api/v2/cinema/76
+  url: {{BASE_URL}}/api/v2/cinema/?category=4
   body: none
   auth: inherit
 }
 
 params:query {
+  category: 4
+  ~cinema_id: 76
   ~is_web: true
-  ~cinema_id: 2
   ~access: cinema_id=2
 }
 
 headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYxNzQzNjgzLCJpYXQiOjE3NjE2NTcyODMsImp0aSI6IjMzNDRmMTgxYzA1YjQ4ODY4ODUyMDkyYzcxYmRiMTUzIiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OTg4ODgxMTIzMDkifQ.G2cIQXlt88nD5CRUnIAbSAZc0G7ggHS4i12qCINMqRM
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTQ4NTc3LCJpYXQiOjE3NjM0NjIxNzcsImp0aSI6ImRkYjFiOTk4ZDAxMDQ4MWM5ZWU0MGRhOWIwOTljY2NiIiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OTg4ODgxMTIzMDkifQ.IIZ1IKWNdKX3CH88LhLJ138gc4bnAZUqngclomHLKaw
 }
 
 settings {

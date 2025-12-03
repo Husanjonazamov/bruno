@@ -11,15 +11,17 @@ post {
 }
 
 headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU1MjU5NTQ1LCJpYXQiOjE3NTUxNzMxNDUsImp0aSI6IjE4ZmRiNDVkMTM4YzRhNmZiYTRmYTM4OWQxODc5NjczIiwidXNlcl9pZCI6MiwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.1pTLcyKpTu1I3PDZW4K3cQ6uwhCDC7dxAWmJcdSJFfo
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY0NzE4MTE4LCJpYXQiOjE3NjQ2MzE3MTgsImp0aSI6ImE1MzBiYzMxNTFkMTQ5YzdhNmVjMWJhOTk4NDYzMTBjIiwidXNlcl9pZCI6OH0.7xh4RVB3rXb6WOSuB931Q80PB8eaB7rIGxMe4cbDy_4
 }
 
 body:json {
   {
-    
+    "plan": 1,
+    "payment_method": "TELEGRAM"
   }
 }
 
 settings {
   encodeUrl: true
+  timeout: 0
 }

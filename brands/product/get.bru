@@ -5,12 +5,14 @@ meta {
 }
 
 get {
-  url: https://admin.amnesiam.com/product
+  url: {{BASE_URL}}/product/
   body: none
   auth: inherit
 }
 
 params:query {
+  ~popular: true
+  ~ordering: -updated_at
   ~currency: uzs
   ~subcategory: 3
   ~brand: 1

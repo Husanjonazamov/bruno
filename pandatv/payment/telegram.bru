@@ -1,0 +1,37 @@
+meta {
+  name: telegram
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/v2/telegram-check/create/
+  body: multipartForm
+  auth: inherit
+}
+
+body:json {
+  {
+      "session_id": 123,
+      "plan": 1,
+      "amount": 1000,
+      "currency": "MANAT",
+      "image": "<file>"
+  }
+  
+}
+
+body:multipart-form {
+  session_id: 17
+  plan: 1
+  amount: 10000
+  image: @file(/home/niko/Pictures/Screenshots/Screenshot From 2025-11-22 13-22-19.png)
+  currency: USD
+  tg_id: 5765144405
+  order: 1
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

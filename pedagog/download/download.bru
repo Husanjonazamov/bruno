@@ -1,0 +1,21 @@
+meta {
+  name: download
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/download/set/31d77d33-c993-45af-b630-70897bcdc5e5
+  body: none
+  auth: inherit
+}
+
+headers {
+  source: bot
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzMDk5NDU2LCJpYXQiOjE3NjMwMTMwNTYsImp0aSI6IjMyYmMyMzQwZTI1NzQ2ZDM5Y2ZmMmYzNjdjMDM1YjYwIiwidXNlcl9pZCI6NjR9._51NDtA2F7Qu-89wkFri0Z6SPtS8SCGGqHWoODWnXIo
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
