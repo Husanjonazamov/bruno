@@ -1,0 +1,25 @@
+meta {
+  name: login
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/v1/auth/login/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email_or_phone": "azamovhusanboy08@gmail.com",
+    "password": "940014741",
+    "type": "email"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

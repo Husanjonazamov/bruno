@@ -1,0 +1,20 @@
+meta {
+  name: my-save
+  type: http
+  seq: 7
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/cinema/save/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY1ODY5NzcyLCJpYXQiOjE3NjU3ODMzNzIsImp0aSI6IjU0YjQxMzRmNzdmODRlYjY5OTllMGU2YjgzMTc5OTJjIiwidXNlcl9pZCI6MTM5MCwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.uyoWRiOOdBArCfxDPv8LrgSN-a0HBqusuhPyVMWkC_w
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

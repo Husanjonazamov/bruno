@@ -5,20 +5,22 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/api/v2/cinema/?category=4
+  url: {{BASE_URL}}/api/v2/reels/
   body: none
   auth: inherit
 }
 
 params:query {
-  category: 4
+  ~category: 3
+  ~page_size: 12
+  ~page: 1
   ~cinema_id: 76
   ~is_web: true
   ~access: cinema_id=2
 }
 
 headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzYzNTQ4NTc3LCJpYXQiOjE3NjM0NjIxNzcsImp0aSI6ImRkYjFiOTk4ZDAxMDQ4MWM5ZWU0MGRhOWIwOTljY2NiIiwidXNlcl9pZCI6MSwicGhvbmUiOiI5OTg4ODgxMTIzMDkifQ.IIZ1IKWNdKX3CH88LhLJ138gc4bnAZUqngclomHLKaw
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4MDM3ODc3LCJpYXQiOjE3Njc5NTE0NzcsImp0aSI6IjQ2MTA2NzdmNDVjYjQ0ZmM5OGMxMWY3MWUwMjc3ZGU1IiwidXNlcl9pZCI6MiwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.T1RbvZV3daeZaluJ2V3z0_x5zPsa4T_PR0SPebLnvTM
 }
 
 settings {

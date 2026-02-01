@@ -1,0 +1,26 @@
+meta {
+  name: upload-chunk
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/v2/cinema/upload-chunk/
+  body: multipartForm
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MDEyMDY0LCJpYXQiOjE3NjY5MjU2NjQsImp0aSI6ImU5NDcyMWY2ZjUwMjQyOTM4YjkyYTYyYTVmYTIzYzFkIiwidXNlcl9pZCI6MTM5MCwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.f4vpqj_gIJRF2Wu8n9kX7rBmsy0QcuEHGcJWSjSrc4k
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MDAwODE0LCJpYXQiOjE3NjY5MTQ0MTQsImp0aSI6ImZkMGZmZWI3MzkzYjQ4YjI5MjgzZGY2M2U4MTc5NTkxIiwidXNlcl9pZCI6MiwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.TVJgjJ3cYE-pLldwXg2aILzSWpUUeZmYnHtI41KcJx0
+}
+
+body:multipart-form {
+  cinema_video_id: 360
+  file: @file(/home/khego/Videos/Screencasts/Screencast From 2025-12-27 15-56-15.mp4)
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

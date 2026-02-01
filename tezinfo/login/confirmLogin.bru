@@ -1,0 +1,24 @@
+meta {
+  name: confirmLogin
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/login/confirm/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "phone": 998901234567,
+      "code": 1111,
+      "tg_id": 5765144405
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

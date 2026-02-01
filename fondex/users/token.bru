@@ -1,0 +1,25 @@
+meta {
+  name: token
+  type: http
+  seq: 4
+}
+
+post {
+  url: {{BASE_URL}}/setToken/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "name": "Test",
+    "email": "+998940014741",
+    "password": "Test1234"
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

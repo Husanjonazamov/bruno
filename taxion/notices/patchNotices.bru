@@ -1,0 +1,26 @@
+meta {
+  name: patchNotices
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{BASE_URL}}/api/v1/notice/5/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4MzkxMTc1LCJpYXQiOjE3NjgzODc1NzUsImp0aSI6IjVkYzJkZjhmYjE3MTRhZjBiMzdlNWFmNDc0Y2QxMzEwIiwidXNlcl9pZCI6MX0.RFCvKersx3NipZsdGJjpFmQifv8zKEjUebRrqeSIN20
+}
+
+body:json {
+  {
+    "is_active": true
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

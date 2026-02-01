@@ -1,0 +1,28 @@
+meta {
+  name: authEmploee
+  type: http
+  seq: 5
+}
+
+post {
+  url: {{BASE_URL}}/api/employee/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY5MTY5MjE1LCJpYXQiOjE3NjkxNjU2MTUsImp0aSI6Ijk5Nzc3NzE0YWM5NjQxZmY5NzNjZGQ2ZGQ2NjlkNTEzIiwidXNlcl9pZCI6MTgyfQ.xEVmUJE6z8NJC8eFKkqj1TUid6WyEX02g0ZploCSUSU
+}
+
+body:json {
+  {
+    "first_name": "Husanjon",
+    "last_name": "azamov",
+    "phone": 940014741
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

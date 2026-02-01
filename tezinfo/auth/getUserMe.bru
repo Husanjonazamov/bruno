@@ -1,0 +1,20 @@
+meta {
+  name: getUserMe
+  type: http
+  seq: 4
+}
+
+get {
+  url: {{BASE_URL}}/auth/me/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODIzMjk0LCJpYXQiOjE3Njg4MTk2OTQsImp0aSI6IjMzZTEwYmU4ZjMwMjQzNWFiNDE0ZGIwZDUyZTY0ZDM1IiwidXNlcl9pZCI6MjA0fQ.1nzLDnkXKec42WvGPoIz3FiHU8sYOXmsiPalpW1c0pg
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

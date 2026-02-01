@@ -1,0 +1,27 @@
+meta {
+  name: createPushToken
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/push-token/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY5NzU4Mjc2LCJpYXQiOjE3Njk3NTQ2NzYsImp0aSI6IjRjOWM4M2UyMTc0NDQ4ZmQ4ZWI1NDAxMjk4MDhkNDUxIiwidXNlcl9pZCI6MTgyfQ.7wZA_C_8qT5N78HS_ECqBOPpDC5D8VgSYL3ERxixA5g
+}
+
+body:json {
+  {
+    "token": "ExponentPushToken[xxxxxxxxxxxxxxxxxxxxxx]",
+    "platform": "ios"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

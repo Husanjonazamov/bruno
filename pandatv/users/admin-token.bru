@@ -1,0 +1,23 @@
+meta {
+  name: admin-token
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{BASE_URL}}/api/v2/auth/admin/token/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "phone": 998888112309,
+    "password": 2309
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

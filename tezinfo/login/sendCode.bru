@@ -1,0 +1,22 @@
+meta {
+  name: sendCode
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{BASE_URL}}/login/send_code/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "phone": 998976765616
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

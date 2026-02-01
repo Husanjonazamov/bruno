@@ -5,9 +5,18 @@ meta {
 }
 
 get {
-  url: http://127.0.0.1:8000/api/v1/config/
+  url: {{BASE_URL}}/api/v1/products/new-arrival?limit=10&offset=0
   body: none
   auth: inherit
+}
+
+params:query {
+  limit: 10
+  offset: 0
+}
+
+headers {
+  Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMjAxYTMxNjE2ZDE2ZmY1OWFiMjU4NDMyNDRmMWMwODY4ZDIyZWNjYjM4YjM5ZTMwOTQwMzdmOTExYTgzZTFiOWVlOTdmYTMzYWIyMDZhNzQiLCJpYXQiOjE3NjU4NzcyODkuMDgyMDIzLCJuYmYiOjE3NjU4NzcyODkuMDgyMDI5LCJleHAiOjE3OTc0MTMyODkuMDc2MDQ3LCJzdWIiOiI2MCIsInNjb3BlcyI6W119.Jj090FGQpnJtN3RvDd_Wfnyy6K1oYPnEdAtSqsv_gSIwfV5TlxNgIRRjUeuXkiBIOV5FsfOcyulwTqqWQb6qlCKEf6T8wBd8340YbIkeHvFvniEE5lprUVkl5K-rPlUODbbssM3XMBhNqJPFhzkiJ4dXI1xV1cMxpbn0V2cQtB4E8b0etF3TLuwycRd3VHuqIoZ5k-1OfOdWvwMpEjD8ByeTsF7A0qSPBtXfboFRtuh9QVq3p_NioIEtox1rjPBmuxpIPOSAw1EKbmDNtpizHfT1c74fWZCy4A3hiWVPkH89BSHtzryKIm70VE3mY_U1pk0XmNkgQBxv40PK-WFykh0heMQAi81FPNHRKmqG_gE17drpjZjoCDC-LmmEDjwseh4hbcRk0yYYYssS5OlC8UCxgv03aAzmBezKnKl_4wNqrWEC9Bsz6ae6_gAaBG9dx7ALC9XIEPA4VRwGXu-3rXB_0pKwFcCfrWrgd2xRVtOHvfG11twUNvvvUaERA3-sdymcvLg9YQ8XvCiG7maznw_vFBuve67Bf3T7uj62BVIm99SvA6RFhIPf8xygXajha1mPYUVIH5Z1jO3JfaNmU2JaTUES3MrjaQikFM9URRML3jKdHptcr_BiG-a6Ow9CVToT8vFgmE9LwsTN3wU9_M2nf51HjwVL9zuF6dD3sfc
 }
 
 settings {

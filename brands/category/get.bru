@@ -5,16 +5,20 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/product/category/?gender=male&subcategory=3&category=6
+  url: {{BASE_URL}}/product/category/?gender=male
   body: none
   auth: inherit
 }
 
 params:query {
   gender: male
-  subcategory: 3
-  category: 6
+  ~subcategory: 3
+  ~category: 6
   ~subcategory: 2
   ~category: 3
   ~gender: male
+}
+
+headers {
+  Accept-Language: en
 }

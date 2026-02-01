@@ -1,0 +1,23 @@
+meta {
+  name: getCategory
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://emart-web.felix-its.uz/wallet-payme-link/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "amount": 50000
+  }
+  
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

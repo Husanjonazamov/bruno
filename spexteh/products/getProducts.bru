@@ -1,0 +1,16 @@
+meta {
+  name: getProducts
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://43.245.226.222:8074/api/sensor-data/
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

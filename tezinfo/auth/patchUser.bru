@@ -1,0 +1,27 @@
+meta {
+  name: patchUser
+  type: http
+  seq: 6
+}
+
+patch {
+  url: {{BASE_URL}}/auth/user-update/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY5Njc1NDI0LCJpYXQiOjE3Njk2NzE4MjQsImp0aSI6ImU1NmYxODg5MmVlZjRkNTBhZjY5MzI0ZWE2MzhjZDNhIiwidXNlcl9pZCI6MTgyfQ.s8nrHNAVW18HIIDCQoXbdzZR4LHkaS48rfZmKkygAKE
+}
+
+body:json {
+  {
+      "age": 25,
+      "gender": "male"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

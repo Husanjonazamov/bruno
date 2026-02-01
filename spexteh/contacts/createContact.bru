@@ -1,0 +1,22 @@
+meta {
+  name: createContact
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/v1/contacts/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "phone": 998940014741
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

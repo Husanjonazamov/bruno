@@ -1,0 +1,23 @@
+meta {
+  name: authToken
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/auth/token/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "phone": 99,
+    "password": 99
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

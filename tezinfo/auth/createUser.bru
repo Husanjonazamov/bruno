@@ -1,0 +1,28 @@
+meta {
+  name: createUser
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://api.infotarget.uz/auth/register/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "phone": 998976765615,
+    "stir": "312727947",
+    "company_name": "Test Company",
+    "director_full_name": "Test Director",
+    "person_type": "employee",
+    "address": "ds",
+    "telegram_id": 5765144405
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

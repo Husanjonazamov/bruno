@@ -1,0 +1,26 @@
+meta {
+  name: post
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://api.infotarget.uz/api/ad/generate_pdf/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4NTA1NDU2LCJpYXQiOjE3Njg1MDE4NTYsImp0aSI6IjU4NmI5NWEwYzU4NTRmNjFhMDJhZDlkYmFlMTgwNWM4IiwidXNlcl9pZCI6MTgyfQ.BO4I_z1QM3wEQVqMM_cRs8uYgrXpNi91lHSgYAof7ow
+}
+
+body:json {
+  {
+    "ad_id": 84
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

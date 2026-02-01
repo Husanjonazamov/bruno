@@ -1,0 +1,20 @@
+meta {
+  name: deleteProductService
+  type: http
+  seq: 4
+}
+
+delete {
+  url: {{BASE_URL}}/api/product-service/17/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY4ODE0NjAzLCJpYXQiOjE3Njg4MTEwMDMsImp0aSI6ImM2M2NkZmI3MTQ4YjRiNmE4ZDI2NDIwMzA1ZTcwMGFkIiwidXNlcl9pZCI6MTgyfQ.4CyNR8e7ZVnqEfFBkXJW8BDpZF9hm4aIxB8QqeQWjKY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

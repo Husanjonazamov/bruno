@@ -1,0 +1,20 @@
+meta {
+  name: get
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/dashboard-ads/
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY5MDAyMDAzLCJpYXQiOjE3Njg5OTg0MDMsImp0aSI6IjA4MjJmYTc4Nzc0ZjQ2ZjdhNmU0MGExMDUwZjk0YmI5IiwidXNlcl9pZCI6MTgyfQ.AR1mG94tEBwGpBQlpdMWowqcHfGy8Q2q7TgYtVJ4bwY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

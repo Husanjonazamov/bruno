@@ -1,0 +1,29 @@
+meta {
+  name: cinema-create
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/v2/cinema/create/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MDEyMDY0LCJpYXQiOjE3NjY5MjU2NjQsImp0aSI6ImU5NDcyMWY2ZjUwMjQyOTM4YjkyYTYyYTVmYTIzYzFkIiwidXNlcl9pZCI6MTM5MCwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.f4vpqj_gIJRF2Wu8n9kX7rBmsy0QcuEHGcJWSjSrc4k
+  ~Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY3MDAwODE0LCJpYXQiOjE3NjY5MTQ0MTQsImp0aSI6ImZkMGZmZWI3MzkzYjQ4YjI5MjgzZGY2M2U4MTc5NTkxIiwidXNlcl9pZCI6MiwicGhvbmUiOiI5OTg5NDAwMTQ3NDEifQ.TVJgjJ3cYE-pLldwXg2aILzSWpUUeZmYnHtI41KcJx0
+}
+
+body:json {
+  {
+    "title": "keksa bosydoq 6",
+    "cinema_id": 374,
+    "cinema_type": "SERIAL"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,20 @@
+meta {
+  name: subscription
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/api/v2/subscription/
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzY2ODUyNjgyLCJpYXQiOjE3NjY3NjYyODIsImp0aSI6IjllN2IwZGZkMjEwYjRjYWY5ZTk3OWYyMDk4OGFmMTVhIiwidXNlcl9pZCI6ODY3LCJwaG9uZSI6Ijk5ODk5OTQwMDA0OSJ9.O_JiZy42y43gX32CHcRoRgSZM-xQvFeqfz9qfNc11mY
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

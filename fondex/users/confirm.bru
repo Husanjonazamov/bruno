@@ -1,0 +1,24 @@
+meta {
+  name: confirm
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/confirmOtpy
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "email": "+998940014742",
+    "otp": 130526,
+    "role": "driver"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

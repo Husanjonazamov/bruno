@@ -1,0 +1,23 @@
+meta {
+  name: confirmOtp
+  type: http
+  seq: 3
+}
+
+post {
+  url: https://api.infotarget.uz/auth/confirm/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "phone": 998976765616,
+    "code": 9423
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

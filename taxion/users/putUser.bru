@@ -1,0 +1,27 @@
+meta {
+  name: putUser
+  type: http
+  seq: 4
+}
+
+patch {
+  url: {{BASE_URL}}/api/v1/auth/me
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "first_name": "Husanjon",
+    "last_name": "Azamov",
+    "phone": "998940014741",
+    "api_id": 26308006,
+    "api_hash": "8e97e7b099257642d3d9207ccbf9ee5d",
+    "bot_token": ""
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
