@@ -5,9 +5,14 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/api/goverment-service/
+  url: {{BASE_URL}}/api/goverment-service/?category=3&page=2
   body: none
   auth: inherit
+}
+
+params:query {
+  category: 3
+  page: 2
 }
 
 settings {

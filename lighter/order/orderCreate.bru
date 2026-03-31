@@ -1,0 +1,39 @@
+meta {
+  name: orderCreate
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/api/v1/market-order/
+  body: json
+  auth: inherit
+}
+
+params:query {
+  : 
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcxMTY0MDQ3LCJpYXQiOjE3NzExNjA0NDcsImp0aSI6IjE0NTZkMTQ2ZWI4ZTRmNTQ4NWU2NGZiMmQ5ODYwOGZmIiwidXNlcl9pZCI6MX0.DTvm4cjQPI-R983pJNnSEHw0Oqa8F7ZMmq_sSqDQX44
+}
+
+body:json {
+  {
+      "first_name": "Husanjon",
+      "phone": "998940014742",
+      "latitude": 41.2995,
+      "longitude": 69.2401,
+      "items": [
+          {
+              "product": 1, 
+              "quantity": 2
+          }
+      ]
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

@@ -1,0 +1,21 @@
+info:
+  name: check
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://lattaputta.uz/api/v1/auth/check-phone/
+  body:
+    type: json
+    data: |2-
+       {
+           "phone": "+998940014741"
+       }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

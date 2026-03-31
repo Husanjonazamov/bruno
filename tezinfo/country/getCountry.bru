@@ -5,9 +5,17 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/api/countries/
+  url: {{BASE_URL}}/api/countries/?country=Узбекистан
   body: none
   auth: none
+}
+
+params:query {
+  country: Узбекистан
+}
+
+headers {
+  Accept-Language: ru
 }
 
 settings {

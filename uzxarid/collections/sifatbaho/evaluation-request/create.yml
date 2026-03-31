@@ -1,0 +1,39 @@
+info:
+  name: create
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/evaluation-request/"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczNzU5OTUzLCJpYXQiOjE3NzM3NTYzNTMsImp0aSI6ImE1MjY3MGM4NWE3MTRjYThiNWIxMThiMTE5ZDM4YThlIiwidXNlcl9pZCI6MX0.9zf2yaII33mquMDgqzVmuLtD6B4grJwIMXq0Tee8Kho
+  body:
+    type: json
+    data: |-
+      {
+          "rate_type": "auto",
+          "object_type": "lightweight_auto",
+          "customer_inn_number": "123456789",
+          "owner_inn_number": "987654321",
+          "tex_passport": "AA 1234567",
+          "value_determined": "Bozor qiymati",
+          "rate_goal": "Kredit",
+          "property_rights": "Xususiy",
+          "form_ownership": "Xususiy",
+          "need_delivering": true,
+          "location": {
+              "lat": 41.311081,
+              "lng": 69.240562,
+              "name": "Toshkent, Amir Temur"
+          },
+          "locationName": "Toshkent shahar, Yunusobod"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

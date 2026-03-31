@@ -1,0 +1,22 @@
+info:
+  name: otp
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: http://lattaputta.uz/api/v1/auth/verify-phone/
+  body:
+    type: json
+    data: |-
+      {
+        "phone": "+998940014741",
+        "token": "715484"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

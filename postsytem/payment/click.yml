@@ -1,0 +1,19 @@
+info:
+  name: click
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://127.0.0.1:8082/payment/payme/pay?payment_id=5696409c-759a-4bfc-a440-7dce9d94e8f5
+  params:
+    - name: payment_id
+      value: 5696409c-759a-4bfc-a440-7dce9d94e8f5
+      type: query
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

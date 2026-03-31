@@ -1,0 +1,20 @@
+info:
+  name: authTokenRefresh
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/auth/token/refresh/"
+  body:
+    type: json
+    data: |-
+      {
+        "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc3NDY4MjE0MywiaWF0IjoxNzcyMDkwMTQzLCJqdGkiOiI5ZDA5MTQwZjYzMDI0YjYzOThmNmQzYzI3MjYxZDFiMiIsInVzZXJfaWQiOjF9.GkEzbSnfQeSM0ilaqinq5WFA505JHBOnmhYl_dzLoe8"
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,70 @@
+info:
+  name: createQuickEvaluation
+  type: http
+  seq: 4
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/quick-evaluation/"
+  body:
+    type: multipart-form
+    data:
+      - name: tex_passport_serie_num
+        type: text
+        value: AAA 1234567
+      - name: tech_passport_issued_date
+        type: text
+        value: 2029-10-23
+      - name: tech_passport_issued_place
+        type: text
+        value: Fargona
+      - name: tex_passport_file
+        type: file
+        value:
+          - /home/khego/Pictures/175482926941_22.webp
+      - name: car_type
+        type: text
+        value: lightweight
+      - name: brand
+        type: text
+        value: "1"
+      - name: marka
+        type: text
+        value: "1"
+      - name: car_position
+        type: text
+        value: "2"
+      - name: distance_covered
+        type: text
+        value: "32"
+      - name: body_type
+        type: text
+        value: "2"
+      - name: vin_number
+        type: text
+        value: "12312312312312312"
+      - name: car_number
+        type: text
+        value: "232"
+      - name: car_manufactured_date
+        type: text
+        value: "2019"
+      - name: engine_number
+        type: text
+        value: "2.2"
+      - name: color
+        type: text
+        value: "1"
+      - name: fuel_type
+        type: text
+        value: "2"
+      - name: state_car
+        type: text
+        value: "1"
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

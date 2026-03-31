@@ -1,0 +1,20 @@
+meta {
+  name: getUSerLike
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/UserLike/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcwMjg3ODMxLCJpYXQiOjE3NzAyODQyMzEsImp0aSI6ImQwMzlkYTJhYzRkZTQ5YWM4NTFjNmU3NDM5MjhmNWJjIiwidXNlcl9pZCI6Nn0.oEurbJUVWBjFajwwIi3KuPvstnlY-r_bmU6iwBL-wek
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

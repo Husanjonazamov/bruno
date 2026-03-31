@@ -1,0 +1,26 @@
+info:
+  name: get
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: https://api.billz.io/v1/order
+  headers:
+    - name: Authorization
+      value: Bearer c64a08dad03d72bd6d49fa1fe72f4e5860e2460b0b05cdfa1402345de86bdf4422ab8056d2a5bd67d75a6876634b3fd715e4d5c3d78f2078164a329596a88eaad0e5bea56c6e2abb3eda41de135330843476496daeadbaf62fac46b53e57d222ca8601227085cd1c95be05741b59dd481caa0d5b44990f4b
+  params:
+    - name: date_from
+      value: 2026-02-26
+      type: query
+      disabled: true
+    - name: date_to
+      value: 2026-02-26
+      type: query
+      disabled: true
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

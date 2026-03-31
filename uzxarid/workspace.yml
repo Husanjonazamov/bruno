@@ -1,0 +1,18 @@
+opencollection: 1.0.0
+info:
+  name: "uzxarid"
+  type: workspace
+
+collections:
+  - name: "uzxarid"
+    path: "../docs"
+  - name: "sifatbaho"
+    path: "collections/sifatbaho"
+  - name: "sherdo"
+    path: "collections/sherdo"
+
+specs:
+
+docs: ''
+
+activeEnvironmentUid: 1cn6ukg00000000000000

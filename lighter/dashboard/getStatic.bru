@@ -1,0 +1,20 @@
+meta {
+  name: getStatic
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/api/v1/statistics/summary
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzcxMTY0MDQ3LCJpYXQiOjE3NzExNjA0NDcsImp0aSI6IjE0NTZkMTQ2ZWI4ZTRmNTQ4NWU2NGZiMmQ5ODYwOGZmIiwidXNlcl9pZCI6MX0.DTvm4cjQPI-R983pJNnSEHw0Oqa8F7ZMmq_sSqDQX44
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

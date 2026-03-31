@@ -1,0 +1,27 @@
+meta {
+  name: myorg
+  type: http
+  seq: 7
+}
+
+post {
+  url: {{BASE_URL}}/auth/get-person/
+  body: json
+  auth: inherit
+}
+
+headers {
+  ~token: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Mzg5LCJpYXQiOjE3NzEyMjA2OTYsImV4cCI6MjA4Njc5NjY5Nn0.EEF3ZrUYXSIQiLsOHAYfZRSTlOWATGJff0UT-wAUvWE
+}
+
+body:json {
+  {
+      "type": "legal_entity",
+      "value": "312756594"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

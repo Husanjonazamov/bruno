@@ -5,9 +5,16 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/api/v2/cinema/1/
+  url: {{BASE_URL}}/api/v3/cinema/1/
   body: none
   auth: inherit
+}
+
+headers {
+  X-Payload-Nonce: yHfKNlIy8eBEcvMEBwsV1Q
+  X-Payload-IV: awCJzHuV82GZwXXYzLYH0g
+  X-Payload-MAC: o6y8SptzyrLGpYWvkyTxtWT9YFuwphd61UXS6eqpxQQ
+  X-Payload-TS: 1770363579
 }
 
 settings {

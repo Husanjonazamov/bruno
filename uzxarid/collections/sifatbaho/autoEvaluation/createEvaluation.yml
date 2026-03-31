@@ -1,0 +1,58 @@
+info:
+  name: createEvaluation
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/auto-evaluation/"
+  body:
+    type: json
+    data: |-
+      {
+        "registration_number": "AE-001",
+        "contract_date": "2026-03-10",
+        "object_inspection_date": "2026-03-10",
+        "rate_date": "2026-03-10",
+        "rate_report_date": "2026-03-10",
+        "rate_object_name": "Chevrolet Cobalt",
+        "object_type": "lightweight_auto",
+
+        "object_owner_type": 1,
+        "object_owner_individual_person_f_name": "Alisher",
+        "object_owner_individual_person_l_name": "Karimov",
+        "object_owner_individual_person_p_name": "Rustamovich",
+        "object_owner_individual_person_passport_num": "AB 1234567",
+        "property_rights": 1,
+        "form_ownership": 1,
+        "value_determined": 1,
+        "rate_type": 1,
+
+        "object_location_province": "Toshkent",
+        "object_location_district": "Yunusobod",
+        "object_location_city": "Toshkent",
+        "object_location_neighborhood": "Bogishamol",
+        "object_location_street": "Amir Temur",
+        "object_location_home": "15",
+        "object_location_highways": 1,
+        "object_location_covenience": 1,
+
+        "tex_passport_serie_num": "AAB 1234567",
+        "tex_passport_gived_date": "2020-05-15",
+        "tex_passport_gived_location": "Toshkent IIB",
+        "car_type": 1,
+        "car_wheel": 1,
+        "car_brand": "Chevrolet",
+        "car_model": "Cobalt",
+        "car_number": "01 A 123 AA",
+        "manufacture_year": "2022",
+        "car_dvigatel_number": "ENG123456789",
+        "car_color": "Oq"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

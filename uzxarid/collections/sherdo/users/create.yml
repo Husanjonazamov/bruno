@@ -1,0 +1,24 @@
+info:
+  name: create
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/api/auth/register/"
+  body:
+    type: json
+    data: |-
+      {
+        "phone": 998944,
+        "username": "34",
+        "password": 3333,
+        "password_confirm": 3333
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

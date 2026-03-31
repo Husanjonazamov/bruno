@@ -5,18 +5,14 @@ meta {
 }
 
 get {
-  url: http://127.0.0.1:8022/listing/me
+  url: https://toshkent-uytop.felixits.uz/listing/
   body: json
-  auth: inherit
+  auth: none
 }
 
 params:query {
   ~is_top: true
   ~status: pending
-}
-
-headers {
-  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzU1NjIxNTY2LCJpYXQiOjE3NTU2MTc5NjYsImp0aSI6IjgzMWViNzkyODZkZDRiNzJhZDQzYjIyMjgxYTgzYmQyIiwidXNlcl9pZCI6Mn0.vMJm5zsrBBFYojrl1UhXnc-A4mUDHgW3pCl7MnjvM4o
 }
 
 body:json {

@@ -1,0 +1,7 @@
+info:
+  name: QuickEvaluation
+  type: folder
+  seq: 9
+
+request:
+  auth: inherit

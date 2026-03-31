@@ -5,9 +5,13 @@ meta {
 }
 
 get {
-  url: {{BASE_URL}}/api/v1/subcategory/
+  url: {{BASE_URL}}/api/v1/subcategory/?category=1
   body: none
   auth: inherit
+}
+
+params:query {
+  category: 1
 }
 
 settings {

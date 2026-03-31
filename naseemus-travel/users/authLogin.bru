@@ -1,0 +1,23 @@
+meta {
+  name: authLogin
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/auth/token/
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "azamovhusanjon88@gmail.com",
+    "password": 123456789
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

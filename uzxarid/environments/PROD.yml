@@ -1,0 +1,5 @@
+name: PROD
+variables:
+  - name: BASE_URL
+    value: https://sifatbaho.felixits.uz/api/v1
+    disabled: true

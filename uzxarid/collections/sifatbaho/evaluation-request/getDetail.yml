@@ -1,0 +1,18 @@
+info:
+  name: getDetail
+  type: http
+  seq: 2
+
+http:
+  method: GET
+  url: "{{BASE_URL}}/evaluation-request/1/"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczMTM2NDk3LCJpYXQiOjE3NzMxMzI4OTcsImp0aSI6ImUxYWZhOGI0OGMyYzQyNTlhYTVlNjRkN2UzOThjODAxIiwidXNlcl9pZCI6MX0.MTOmMwf3HjJf58mVgBzUJoc72FZgC_ZrgbR1-cS7OUk
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

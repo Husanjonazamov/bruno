@@ -1,0 +1,7 @@
+info:
+  name: evaluation-purpose
+  type: folder
+  seq: 15
+
+request:
+  auth: inherit

@@ -1,0 +1,24 @@
+info:
+  name: post
+  type: http
+  seq: 2
+
+http:
+  method: POST
+  url: "{{BASE_URL}}/api/favorite/"
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczNTcwMzk4LCJpYXQiOjE3NzM1NjY3OTgsImp0aSI6IjBkOTI5NzdhNWI5NTQ4MGFhZWJlODAxOTM0NDFmNGNmIiwidXNlcl9pZCI6M30.cy87_cBYJp5qTIOnGHngskJ37H__hPb3TzQWt2XCVMQ
+  body:
+    type: json
+    data: |-
+      {
+        "cinema": 1
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

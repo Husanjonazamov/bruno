@@ -1,0 +1,23 @@
+meta {
+  name: confirmOtp
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{BASE_URL}}/api/v1/auth/confirm/
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "phone": "998940014747",
+    "code": "3498"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

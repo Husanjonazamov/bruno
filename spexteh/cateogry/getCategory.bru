@@ -4,17 +4,14 @@ meta {
   seq: 1
 }
 
-post {
-  url: https://emart-web.felix-its.uz/wallet-payme-link/
+get {
+  url: {{BASE_URL}}/api/v1/category/?category_id=1
   body: json
   auth: none
 }
 
-body:json {
-  {
-      "amount": 50000
-  }
-  
+params:query {
+  category_id: 1
 }
 
 settings {

@@ -1,0 +1,22 @@
+info:
+  name: chatV@
+  type: websocket
+  seq: 2
+
+websocket:
+  url: ws://localhost:8034/ws/chat/?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzczNTY1NDgwLCJpYXQiOjE3NzM1NjE4ODAsImp0aSI6ImI5MDg0YjM3MGQ3OTQ0NGJiYTgwYmNhMzU3M2ViNWZlIiwidXNlcl9pZCI6Mn0.ktvbnkocgcSwcgyK9-unW9NfWDLrSUL5DUgb7mUViKU
+  message:
+    type: json
+    data: |-
+      {
+          "group": 1, 
+          "action": "call",
+          "data": {
+              "connection_id": "ixtiyoriy_id_123"
+          }
+      }
+  auth: inherit
+
+settings:
+  timeout: 0
+  keepAliveInterval: 0

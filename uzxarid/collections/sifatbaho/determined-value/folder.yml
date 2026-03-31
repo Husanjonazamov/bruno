@@ -1,0 +1,7 @@
+info:
+  name: determined-value
+  type: folder
+  seq: 16
+
+request:
+  auth: inherit
